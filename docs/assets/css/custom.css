@@ -1,29 +1,15 @@
-/* Change the navbar background and text color */
-/* .md-header {
-    background-color: #028063 !important;  /* Dark blue background */
-    /* color: #eae9da !important;  White text */
-/* } */ 
-
 .md-header {
-  /* Optional default background color, can be removed if JavaScript will always set it */
-  background-color: #028063;  /* Default dark blue background, less priority without !important */
-  color: #eae9da !important;  /* White text */
+  background-color: var(--header-color, #028063);
+  color: #eae9da !important;
 }
 
-/* Adjust link colors in the navbar */
-.md-header .md-header-nav__link {
-    color: #c71a34 !important;  /* White links */
-}
-
-/* Change the background color of the footer */
 .md-footer {
-    background-color: #f1f2e8 !important;  /* Dark blue background */
-    color: #ee5fb7 !important;  /* White text */
+    background-color: #f1f2e8 !important;
+    color: #555 !important;
 }
 
-/* Change the background color of the main content area */
 .md-main {
-    background-color: #ffffff !important;  /* Light gray background */
+    background-color: #ffffff !important;
 }
 
 .center-image {
@@ -33,36 +19,6 @@
     text-align: center;
 }
 
-
-/* html {
-  font-size: 19px; /* Default size. You can increase or decrease it 
-}  */
-
-
-/* body {
-  font-family: Arial, sans-serif; /* Sets the font for the body */
-  /* font-size: 1rem; Sets the base font size */
-/* }  */
-
-/* Maximum space for text block */
 .md-grid {
-  max-width: 99%; /* or 100%, if you want to stretch to full-width */
+  max-width: 99%;
 }
-
-/* h1, h2, h3 {
-  font-weight: bold;
-} */
-
-/* h1 {
-  font-size: 2.5rem; /* Larger size for main headings */
-/* } */ 
-
-/* h2 {
-  font-size: 2rem; /* Smaller than h1 */
-/* } */ 
-
-/* p {
-  font-size: 1rem; /* Standard size for paragraphs */
-  /* line-height: 2; Adjust line spacing for readability */
-/* } */
-
