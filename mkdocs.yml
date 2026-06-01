@@ -3,63 +3,23 @@ site_name: Category Theory through Math & Programming for Dummies
 repo_name: Varvos/cattheor-prog
 repo_url: https://github.com/Varvos/cattheor-prog/
 site_url: https://varvos.github.io/cattheor-prog/
-# docs_dir: docs
 
 theme:
-  name: 'material'
-
+  name: material
 
 extra_css:
-  - assets/css/custom.css 
+  - assets/css/custom.css
   - assets/css/tabs.css
-  - https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.css
 
 extra_javascript:
-  - https://polyfill.io/v3/polyfill.min.js?features=es6
-  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
-  - https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.js
-  - assets/js/katex_init.js
-  - assets/js/random-color.js
-
-
-  # - js/tabs.js
-  # - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML
   - assets/js/mathjax-config.js
-  
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+  - assets/js/random-color.js
 
 markdown_extensions:
   - pymdownx.superfences
   - pymdownx.tabbed:
       alternate_style: true
-theme:
-  name: material
-# markdown_extensions:
-#   # - pymdownx.superfences:
-#   #     custom_fences:
-#   #       - name: tabbed
-#   #         class: tabbed
-#   #         format: pymdownx.tabbed.tabbed_fences
-#   # - pymdownx.tabbed
-#   - markdown.extensions.extra
-#   - markdown.extensions.attr_list
-#   - markdown.extensions.codehilite
-#   - markdown.extensions.tables
-#   - pymdownx.superfences
-#   - pymdownx.details
-#   - pymdownx.inlinehilite
-#   - pymdownx.magiclink
-#   - pymdownx.tilde
-#   - pymdownx.tabbed:
-#       # alternate_style: true
-#       # format: pymdownx.tabbed.tabbed_fences
-
-#   - toc:
-#       permalink: true
-#   - attr_list
-#   # - markdown_katex
-#   # - extensions.tab_extension
-
-
 
 plugins:
   - search
@@ -76,30 +36,21 @@ nav:
     - Algebra: 'preliminaries/basic_algebra.md'
 
   - Basic Concepts:
-    - Formal Defintionns: 'basics/formal_definitions.md'
+    - Formal Definitions: 'basics/formal_definitions.md'
     - Morphisms: 'basics/morphisms.md'
     - Functors: 'basics/functors.md'
-    # - Adjoints: 'basics/adjoints.md'
-    # - Natural Transformations: 'basics/natural_transformations.md'
-    # - Limits and Colimits: 'basics/limits_colimits.md'
-  
+
   - Advanced Topics:
-    - Monads and Monids:
+    - Monads and Monoids:
       - Monads: 'advanced/monads.md'
       - Monoids: 'advanced/monoids.md'
       - Monoidal Categories: 'advanced/monoidal_categories.md'
       - Monads in Programming: 'advanced/monads_in_programming.md'
-
-    # - Enriched Categories: 'advanced/enriched_categories.md'
     - Higher Categories: 'advanced/higher_categories.md'
     - Topos Theory: 'advanced/topos_theory.md'
-  #   - Homotopy Type Theory: 'advanced/homotopy_type_theory.md'
 
   - Category Theory and Machine Learning:
     - Intro: 'ml/index.md'
     - Topological Data Analysis: 'ml/tda.md'
     - Graph Neural Networks: 'ml/gnn.md'
     - Categorical Deep Learning: 'ml/catlearn.md'
-
-
-
