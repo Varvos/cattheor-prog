@@ -1,19 +1,43 @@
-div.tabbed-set div.tabbed-labels label {
-    font-size: 12px !important;
-    padding: 1px 9px !important;
-    margin-right: 0.9px;
-    border-radius: 3px;
-    cursor: pointer;
-    color: #f6f2f2 !important;
-    background-color: var(--header-color, #778a9d);
+.tabbed-labels:before {
+    display: none !important;
 }
 
-div.tabbed-set div.tabbed-labels label:hover {
-    filter: brightness(1.25);
+div.tabbed-set div.tabbed-labels {
+    align-items: flex-end !important;
 }
 
-.tabbed-content {
-    background-color: #f5faf8;
-    padding: 3px;
-    border: 1px solid #c8ddd8;
+div.tabbed-set div.tabbed-labels label,
+div.tabbed-set div.tabbed-labels label > a {
+    align-self: auto !important;
+    padding: 2px 6px !important;
+    line-height: 1 !important;
+    font-size: 0.6rem !important;
+    letter-spacing: -0.01em;
+    color: rgba(255,255,255,0.6) !important;
+    background: #445566 !important;
+    border-radius: 2px 2px 0 0;
+    margin-right: 1px;
+    border-bottom: 2px solid transparent;
+    transition: color 0.12s ease, filter 0.12s ease;
+}
+
+div.tabbed-set div.tabbed-labels label:hover,
+div.tabbed-set div.tabbed-labels label:hover > a {
+    filter: brightness(1.2);
+    color: rgba(255,255,255,0.85) !important;
+}
+
+.tabbed-set > input:nth-child(1):checked ~ .tabbed-labels > label:nth-child(1),
+.tabbed-set > input:nth-child(1):checked ~ .tabbed-labels > label:nth-child(1) > a,
+.tabbed-set > input:nth-child(2):checked ~ .tabbed-labels > label:nth-child(2),
+.tabbed-set > input:nth-child(2):checked ~ .tabbed-labels > label:nth-child(2) > a,
+.tabbed-set > input:nth-child(3):checked ~ .tabbed-labels > label:nth-child(3),
+.tabbed-set > input:nth-child(3):checked ~ .tabbed-labels > label:nth-child(3) > a,
+.tabbed-set > input:nth-child(4):checked ~ .tabbed-labels > label:nth-child(4),
+.tabbed-set > input:nth-child(4):checked ~ .tabbed-labels > label:nth-child(4) > a,
+.tabbed-set > input:nth-child(5):checked ~ .tabbed-labels > label:nth-child(5),
+.tabbed-set > input:nth-child(5):checked ~ .tabbed-labels > label:nth-child(5) > a {
+    background: #64748b !important;
+    color: #ffffff !important;
+    border-bottom: 2px solid #ffffff;
 }
