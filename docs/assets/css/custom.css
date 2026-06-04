@@ -1,6 +1,27 @@
+:root {
+    --header-color: #4985c0;
+}
+
 .md-header {
-  background-color: var(--header-color, #028063);
+  background-color: var(--header-color);
   color: #eae9da !important;
+}
+
+.color-randomiser-btn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 4px 6px;
+    opacity: 0.55;
+    color: inherit;
+    font-size: 15px;
+    line-height: 1;
+    transition: opacity 0.15s ease, transform 0.15s ease;
+}
+
+.color-randomiser-btn:hover {
+    opacity: 1;
+    transform: rotate(20deg);
 }
 
 .md-footer {
