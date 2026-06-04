@@ -8,5 +8,3 @@ dependencies = [
     "mkdocs-awesome-pages-plugin",
 ]
 
-[tool.uv]
-dev-dependencies = []
