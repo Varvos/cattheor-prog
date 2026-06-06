@@ -28,6 +28,9 @@
     
       <link rel="stylesheet" href="../../assets/stylesheets/main.76a95c52.min.css">
       
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
       
 
 
@@ -49,8 +52,6 @@
     
       <link rel="stylesheet" href="../../assets/css/tabs.css">
     
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.css">
-    
     <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -61,7 +62,14 @@
   </head>
   
   
-    <body dir="ltr">
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
   
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
@@ -112,6 +120,32 @@
         </div>
       </div>
     </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+</form>
+      
     
     
       <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
@@ -544,7 +578,7 @@
         
   
   <span class="md-ellipsis">
-    Formal Defintionns
+    Formal Definitions
   </span>
   
 
@@ -659,7 +693,7 @@
             
   
   <span class="md-ellipsis">
-    Monads and Monids
+    Monads and Monoids
   </span>
   
 
@@ -669,7 +703,7 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_1_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4_1">
             <span class="md-nav__icon md-icon"></span>
-            Monads and Monids
+            Monads and Monoids
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -1037,7 +1071,7 @@
 
 <h1 id="informal-introduction"><span style="color: black;"><strong>Informal Introduction</strong></span></h1>
 <p>A central idea in mathematics is that <strong><code>objects in mathematics are defined by the relationships they have with other objects</code></strong> rather than by their intrinsic properties. This idea is the basis of category theory, which allows to unify constructions and draw analogies between different branches of mathematics. </p>
-<p>In essence, category theory allows to formalise the idea of associacions between different mathematical structures and associations between associations.</p>
+<p>In essence, category theory allows to formalise the idea of associations between different mathematical structures and associations between associations.</p>
 <blockquote>
 <p>"A mathematician is a person who can find analogies between theorems; a better mathematician is one who can see analogies between proofs and the best mathematician can notice analogies between theories. One can imagine that the ultimate mathematician is one who can see <strong><code>analogies between analogies.</code></strong>"</p>
 <p><strong>Stefan Banach</strong></p>
@@ -1048,10 +1082,10 @@
 <h3 id="morphisms"><strong>Morphisms</strong></h3>
 <p>The arrows are called <span style="color: red;"><strong>Morphisms</strong></span>, which are the functions that operate on the objects, they relate one object called the source to another called the target of the morphism.</p>
 <ul>
-<li><strong>Morphism</strong> are conncetions between the objects and are displayed with arrows in the diagrams. </li>
+<li><strong>Morphism</strong> are connections between the objects and are displayed with arrows in the diagrams. </li>
 <li><strong>Morphism</strong> can be combined transitively to form new morphism.</li>
 <li>
-<p>Each object is associated with an <strong>Identity Morphism</strong> (a circular arrow to itslef) which does not change other morphism when combined with them.</p>
+<p>Each object is associated with an <strong>Identity Morphism</strong> (a circular arrow to itself) which does not change other morphism when combined with them.</p>
 <p><div align=center>
 <img src="../../img/intro_to_category/arrows.png" width="400px" hight="200px">
 </div></p>
@@ -1062,7 +1096,7 @@
 <p>As such, <strong>Functors</strong> <code>establish analogies between two categories</code>, and they can be used to translate the concepts from one category to another.</p>
 <h3 id="natural-transformations"><strong>Natural Transformations</strong></h3>
 <p>The <span style="color: red;"><strong>Natural Transformation</strong></span> is a concept which allows to define <em><code>connections between Functors</code></em> in a sense
-analogus to what are Morphisms for objects. A such they establish dualities between Functors and objects in the categories. </p>
+analogous to what are Morphisms for objects. A such they establish dualities between Functors and objects in the categories. </p>
 <p>Since the Functors are defined by the way they transform each objects, to define connections between them we need to define  a <em><code>natural</code></em> way to transform images of each object by the two Functors.</p>
 <p>Thus, a <strong>Natural Transformation</strong> is achieved via a family of morphism associated with each objects in the categories. Each object in the source category corresponds to a morphism in the target category, which maps the image of the object under the first functor to its image under the second functor. These morphisms enable us to relate how each functor transforms objects and morphisms. A natural transformation is established when there is consistency between the transformations induced by these morphisms and the transformations applied by the functors to objects and morphisms.</p>
 <h3 id="category-theory-and-programming"><strong>Category Theory and Programming</strong></h3>
@@ -1072,13 +1106,13 @@ analogus to what are Morphisms for objects. A such they establish dualities betw
 <div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Python</label><label for="__tabbed_1_2">Scala</label><label for="__tabbed_1_3">Haskell</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">int_to_string</span><span class="p">(</span><span class="n">x</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+<div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">int_to_string</span><span class="p">(</span><span class="n">x</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
     <span class="k">return</span> <span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
 
-<span class="k">def</span> <span class="nf">string_to_bool</span><span class="p">(</span><span class="n">x</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">string_to_bool</span><span class="p">(</span><span class="n">x</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
     <span class="k">return</span> <span class="nb">bool</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
 
-<span class="k">def</span> <span class="nf">int_to_bool</span><span class="p">(</span><span class="n">x</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">int_to_bool</span><span class="p">(</span><span class="n">x</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
     <span class="k">return</span> <span class="nb">bool</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
 </code></pre></div>
 </div>
@@ -1154,17 +1188,11 @@ analogus to what are Morphisms for objects. A such they establish dualities betw
     
       <script src="../../assets/javascripts/bundle.fe8b6f2b.min.js"></script>
       
-        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script src="../../assets/js/mathjax-config.js"></script>
       
         <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
       
-        <script src="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.js"></script>
-      
-        <script src="../../assets/js/katex_init.js"></script>
-      
         <script src="../../assets/js/random-color.js"></script>
-      
-        <script src="../../assets/js/mathjax-config.js"></script>
       
     
   </body>

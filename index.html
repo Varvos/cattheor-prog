@@ -24,6 +24,9 @@
     
       <link rel="stylesheet" href="assets/stylesheets/main.76a95c52.min.css">
       
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.06af60db.min.css">
+      
       
 
 
@@ -45,8 +48,6 @@
     
       <link rel="stylesheet" href="assets/css/tabs.css">
     
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.css">
-    
     <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -57,7 +58,14 @@
   </head>
   
   
-    <body dir="ltr">
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
   
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
@@ -108,6 +116,32 @@
         </div>
       </div>
     </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+</form>
+      
     
     
       <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
@@ -447,7 +481,7 @@
         
   
   <span class="md-ellipsis">
-    Formal Defintionns
+    Formal Definitions
   </span>
   
 
@@ -562,7 +596,7 @@
             
   
   <span class="md-ellipsis">
-    Monads and Monids
+    Monads and Monoids
   </span>
   
 
@@ -572,7 +606,7 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_1_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4_1">
             <span class="md-nav__icon md-icon"></span>
-            Monads and Monids
+            Monads and Monoids
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -898,8 +932,8 @@
 
 <h1 id="welcome-to-category-theory-through-math-and-programming-for-dummies">Welcome to <code>Category Theory through Math and Programming for Dummies</code></h1>
 <h2 id="project">Project</h2>
-<p>The aim of the  project is to provide an introdcution to category theory concepts, their connections to other areas of mathematics and applications in programming. </p>
-<p>The current "book" in no way is a comprehensive guide to category theory or its applications. We want to emphasize that the author is not an expert in either category theory or functional programming. The book is an attepmt to learn and understand the concepts of category theory and its applications in programming and provide a resource for others who are interested in the same to leanr and contribute to the project.</p>
+<p>The aim of the project is to provide an introduction to category theory concepts, their connections to other areas of mathematics and applications in programming.</p>
+<p>The current "book" is in no way a comprehensive guide to category theory or its applications. We want to emphasize that the author is not an expert in either category theory or functional programming. The book is an attempt to learn and understand the concepts of category theory and its applications in programming and provide a resource for others who are interested in the same to learn and contribute to the project.</p>
 
 
 
@@ -951,17 +985,11 @@
     
       <script src="assets/javascripts/bundle.fe8b6f2b.min.js"></script>
       
-        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script src="assets/js/mathjax-config.js"></script>
       
         <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
       
-        <script src="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.js"></script>
-      
-        <script src="assets/js/katex_init.js"></script>
-      
         <script src="assets/js/random-color.js"></script>
-      
-        <script src="assets/js/mathjax-config.js"></script>
       
     
   </body>

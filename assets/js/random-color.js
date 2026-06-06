@@ -1,31 +1,31 @@
 document.addEventListener("DOMContentLoaded", function() {
-  function getRandomColor() {
-    // Define a set of suitable colors that aren't too light
     var colors = [
-      '#028063', 
-      // '#778a9d', 
-      // '#345B63', 
-      // '#152D35', 
-      '#112A46',
-      '#4985c0',
-      '#377b40',
-      '#9b411b',
+        '#028063',
+        '#112A46',
+        '#4985c0',
+        '#377b40',
+        '#9b411b',
     ];
-    // Select a random color from the array
-    return colors[Math.floor(Math.random() * colors.length)];
-  }
 
-  var randomColor = getRandomColor();  // Store the random color in a variable
+    function applyColor(color) {
+        document.documentElement.style.setProperty('--header-color', color);
+    }
 
-  // Apply to .md-header
-  var headers = document.querySelectorAll('.md-header');
-  headers.forEach(function(header) {
-    header.style.backgroundColor = randomColor;
-  });
+    function pickRandom() {
+        var current = getComputedStyle(document.documentElement)
+            .getPropertyValue('--header-color').trim();
+        var choices = colors.filter(function(c) { return c !== current; });
+        return choices[Math.floor(Math.random() * choices.length)];
+    }
 
-  // Apply to tabbed labels
-  var labels = document.querySelectorAll('div.tabbed-set div.tabbed-labels label');
-  labels.forEach(function(label) {
-    label.style.backgroundColor = randomColor;
-  });
+    var btn = document.createElement('button');
+    btn.className = 'color-randomiser-btn';
+    btn.title = 'Randomise header colour';
+    btn.innerHTML = '🎨';
+    btn.addEventListener('click', function() {
+        applyColor(pickRandom());
+    });
+
+    var header = document.querySelector('.md-header__inner');
+    if (header) header.appendChild(btn);
 });
