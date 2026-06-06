@@ -1,6 +1,6 @@
 # Functors
 
-This section explores various falvors of `Functors`, their role in mathematics, and their usage in programming.
+This section explores various flavors of `Functors`, their role in mathematics, and their usage in programming.
 
 
 
