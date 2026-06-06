@@ -24,13 +24,13 @@
     transform: rotate(20deg);
 }
 
-.md-footer {
-    background-color: #f1f2e8 !important;
-    color: #555 !important;
+[data-md-color-scheme="default"] .md-footer {
+    background-color: #f1f2e8;
+    color: #555;
 }
 
-.md-main {
-    background-color: #ffffff !important;
+[data-md-color-scheme="default"] .md-main {
+    background-color: #ffffff;
 }
 
 .center-image {
@@ -41,5 +41,5 @@
 }
 
 .md-grid {
-  max-width: 99%;
+  max-width: 1400px;
 }
