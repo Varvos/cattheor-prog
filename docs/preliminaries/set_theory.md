@@ -7,9 +7,9 @@ We will start with the basic concepts of set theory. Set theory is the branch of
 A set is a collection of objects. The objects in a set are called elements or members of the set. A set is denoted by curly braces `{}`. For example, the set of natural numbers is denoted by 
 \\[\mathbb{N} = \\{ 0, 1, 2, 3, \ldots \\}.\\]
 
-The formal definition of a set is given by the axioms of set theory. The axioms of set theory are a set of rules that define the properties of sets.  A wildley used set of axioms is the `Zermelo-Fraenkel` set theory with the axiom of choice (ZFC).
+The formal definition of a set is given by the axioms of set theory. The axioms of set theory are a set of rules that define the properties of sets.  A widely used set of axioms is the `Zermelo-Fraenkel` set theory with the axiom of choice (ZFC).
 
-To formaly define the axiom one needs to intruce terminology of formal logic, which is beyond the scope of this document. However, the axioms can be informally described as follows.
+To formally define the axiom one needs to introduce terminology of formal logic, which is beyond the scope of this document. However, the axioms can be informally described as follows.
 
 **ZFC Axioms:**
 
@@ -34,7 +34,7 @@ To formaly define the axiom one needs to intruce terminology of formal logic, wh
 ## Classes
 
 The axiomatization of set theory was developed by Georg Cantor in the late 19th century. Cantor's work was based on the idea of a class.
-As the naive set theory encountered paradoxes, mathematicians began to develop a more rigorous theory of sets. The Zermelo-Fraenkel set theory with the axiom of choice (ZFC) is the most widely used set theory today. One of intuitivistic paradoxes that led to the development of ZFC is the Cantor's paradox that there is no set of all sets. The paradox arises from the set of all sets that do not contain themselves. If such a set exists, then it must contain itself, which contradicts the definition of the set. The paradox is resolved by introducing the concept of a class.
+As the naive set theory encountered paradoxes, mathematicians began to develop a more rigorous theory of sets. The Zermelo-Fraenkel set theory with the axiom of choice (ZFC) is the most widely used set theory today. One of intuitionistic paradoxes that led to the development of ZFC is the Cantor's paradox that there is no set of all sets. The paradox arises from the set of all sets that do not contain themselves. If such a set exists, then it must contain itself, which contradicts the definition of the set. The paradox is resolved by introducing the concept of a class.
 
 A class is a collection of sets. The objects in a class are called sets. A class is denoted by square brackets `[]`. For example, the class of all sets is denoted by \\(\{x | x = x\}\\). The class of all sets is not a set because it contains itself. The class of all sets is called a proper class. A proper class is a class that is not a set. The class of all sets is a proper class because it contains itself.
 

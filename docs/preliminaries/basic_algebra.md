@@ -1,6 +1,6 @@
 # Introduction to Algebra
 
-We continue with a brief introduction to some fundaentalalgebraic structures.
+We continue with a brief introduction to some fundamental algebraic structures.
 
 ## Monoid
 
@@ -23,7 +23,7 @@ A monoid is defined by the following properties:
 
 A simple example of a monoid is the set of natural numbers \\(\mathbb{N}\\) including zero, with addition as the operation. Here, the identity element is \\(0\\).
 
-=== "Haskel"
+=== "Haskell"
     ```haskell
     -- Haskell example of a monoid operation
     add :: Int -> Int -> Int
