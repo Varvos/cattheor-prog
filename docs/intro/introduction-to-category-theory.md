@@ -2,7 +2,7 @@
 
 A central idea in mathematics is that **`objects in mathematics are defined by the relationships they have with other objects`** rather than by their intrinsic properties. This idea is the basis of category theory, which allows to unify constructions and draw analogies between different branches of mathematics. 
 
-In essence, category theory allows to formalise the idea of associacions between different mathematical structures and associations between associations.
+In essence, category theory allows to formalise the idea of associations between different mathematical structures and associations between associations.
 
 >
 > "A mathematician is a person who can find analogies between theorems; a better mathematician is one who can see analogies between proofs and the best mathematician can notice analogies between theories. One can imagine that the ultimate mathematician is one who can see **`analogies between analogies.`**"
@@ -20,9 +20,9 @@ The main concepts of the category theory are <span style="color: red;">**Morphis
 
 The arrows are called <span style="color: red;">**Morphisms**</span>, which are the functions that operate on the objects, they relate one object called the source to another called the target of the morphism.
 
-- **Morphism** are conncetions between the objects and are displayed with arrows in the diagrams. 
+- **Morphism** are connections between the objects and are displayed with arrows in the diagrams. 
 - **Morphism** can be combined transitively to form new morphism.
-- Each object is associated with an **Identity Morphism** (a circular arrow to itslef) which does not change other morphism when combined with them.
+- Each object is associated with an **Identity Morphism** (a circular arrow to itself) which does not change other morphism when combined with them.
 
   
     <div align=center>
@@ -40,7 +40,7 @@ As such, **Functors** `establish analogies between two categories`, and they can
 ### **Natural Transformations**
 
 The <span style="color: red;">**Natural Transformation**</span> is a concept which allows to define *`connections between Functors`* in a sense
-analogus to what are Morphisms for objects. A such they establish dualities between Functors and objects in the categories. 
+analogous to what are Morphisms for objects. A such they establish dualities between Functors and objects in the categories. 
 
 Since the Functors are defined by the way they transform each objects, to define connections between them we need to define  a *`natural`* way to transform images of each object by the two Functors.
 

@@ -11,9 +11,9 @@ A <span style="color: blue;">**Category**</span> \\(\mathcal{C}\\) consists of t
   
   Each morphism \\(f\in mor_{{\mathcal{C}}}(\mathcal{C})\\)of the morphisms class has a source object \\(A\\) and a target object \\(B\\), and is denoted as \\(f\colon A \to B\\). 
   
-We denote \\(mor_{{\mathcal{C}}}(A, B)\\) the class of all morphisms betwen the objects \\(A\\) and \\(B\\).
+We denote \\(mor_{{\mathcal{C}}}(A, B)\\) the class of all morphisms between the objects \\(A\\) and \\(B\\).
 
-- There is a binnary opperation \\(\circ\\) on the class of Morphisms called **morphism compositions**:
+- There is a binary operation \\(\circ\\) on the class of Morphisms called **morphism compositions**:
   \\[ \circ \colon mor_{{\mathcal{C}}}(A, B) \times mor_{{\mathcal{C}}}(B, C) \to mor_{{\mathcal{C}}}(A, C).\\] 
   Which allows to combine any two morphisms \\(f\in mor_{{\mathcal{C}}}(A, B)\\) and \\(g\in mor_{{\mathcal{C}}}(B, C)\\) to  produce a new morphism \\(g\circ f\in mor_{{\mathcal{C}}}(A, C)\\).
   
@@ -21,9 +21,9 @@ We denote \\(mor_{{\mathcal{C}}}(A, B)\\) the class of all morphisms betwen the 
     <img src="../../img/intro_to_category/commutative_diagram.png" width="300px" hight="100px">
     </div>
 
-So that the follwoing properties hold:
+So that the following properties hold:
 
-- **Assocaiativity:** If there are are different ways of composing morphisms, the result should be the same.
+- **Associativity:** If there are are different ways of composing morphisms, the result should be the same.
 
     > For any \\(f\in mor_{{{\mathcal{C}}}}(A, B)\\), \\(g\in mor_{{{\mathcal{C}}}}(B, C)\\) and \\(h\in mor_{{{\mathcal{C}}}}(C, D)\\)
     \\[h\circ(g\circ f) = (h\circ g)\circ f.\\]
@@ -34,7 +34,7 @@ So that the follwoing properties hold:
 
 - **Identity:** For each object, there exists an identity morphism that acts as a neutral element (identity) for the composition of morphisms.
 
-    > There exisits `identity` morphisms for each object \\(1_{X}\in mor_{\mathcal{C}}(X, X),\, \forall X\in obj(\mathcal{C})\\) 
+    > There exists `identity` morphisms for each object \\(1_{X}\in mor_{\mathcal{C}}(X, X),\, \forall X\in obj(\mathcal{C})\\) 
     such that for any \\(f\in mor_{\mathcal{C}}(A, B)\\) \\[1_{B}\circ f= f\circ 1_{A}.\\]
 
     <div style="text-align: center;">
@@ -70,7 +70,7 @@ such that
 
 - \\(\eta_A\\) is a morphism from \\(F(A)\\) to \\(G(A)\\), for each \\(obj(\mathcal{C}_1)\\).
   
-- The above morphism relate the way the to Functors transform objects such that for every morphism \\(f\colon A \mapsto B\\), \\(A, B\in obj(\mathcal{C}_1)\\), we have
+- The above morphism relate the way the two Functors transform objects such that for every morphism \\(f\colon A \mapsto B\\), \\(A, B\in obj(\mathcal{C}_1)\\), we have
 \\[\eta_B\circ F(f) = G(f)\circ \eta_A.\\]
 
 This is illustrated in the following diagram with the commutative diagram that should hold for each morphism \\(\eta_{X}, \eta_{Y}\\) associated to the objects \\(X, Y\\) in the categories.
