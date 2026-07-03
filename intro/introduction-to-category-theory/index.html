@@ -1070,38 +1070,38 @@
 
 
 <h1 id="informal-introduction"><span style="color: black;"><strong>Informal Introduction</strong></span></h1>
-<p>A central idea in mathematics is that <strong><code>objects in mathematics are defined by the relationships they have with other objects</code></strong> rather than by their intrinsic properties. This idea is the basis of category theory, which allows to unify constructions and draw analogies between different branches of mathematics. </p>
-<p>In essence, category theory allows to formalise the idea of associations between different mathematical structures and associations between associations.</p>
+<p>A central idea in mathematics is that <strong><code>objects in mathematics are defined by the relationships they have with other objects</code></strong> rather than by their intrinsic properties. This idea is the basis of category theory, which allows one to unify constructions and draw analogies between different branches of mathematics. </p>
+<p>In essence, category theory allows one to formalise the idea of associations between different mathematical structures and associations between associations.</p>
 <blockquote>
 <p>"A mathematician is a person who can find analogies between theorems; a better mathematician is one who can see analogies between proofs and the best mathematician can notice analogies between theories. One can imagine that the ultimate mathematician is one who can see <strong><code>analogies between analogies.</code></strong>"</p>
 <p><strong>Stefan Banach</strong></p>
 </blockquote>
 <p><span style="color: darkblue;"><strong>Category Theory</strong></span>  is a branch of mathematics which studies the abstraction of objects and their relations. The basic entities of category theory are <span style="color: magenta;"><strong>Categories</strong></span> , which are collections of objects and connections/arrows between them.</p>
 <h2 id="main-concepts"><strong>Main Concepts</strong></h2>
-<p>The main concepts of the category theory are <span style="color: red;"><strong>Morphisms</strong></span>, <span style="color: blue;"><strong>Functors</strong></span>, and <span style="color: green;"><strong>Natural Transformations</strong></span>.</p>
+<p>The main concepts of category theory are <span style="color: red;"><strong>Morphisms</strong></span>, <span style="color: blue;"><strong>Functors</strong></span>, and <span style="color: green;"><strong>Natural Transformations</strong></span>.</p>
 <h3 id="morphisms"><strong>Morphisms</strong></h3>
 <p>The arrows are called <span style="color: red;"><strong>Morphisms</strong></span>, which are the functions that operate on the objects, they relate one object called the source to another called the target of the morphism.</p>
 <ul>
-<li><strong>Morphism</strong> are connections between the objects and are displayed with arrows in the diagrams. </li>
-<li><strong>Morphism</strong> can be combined transitively to form new morphism.</li>
+<li><strong>Morphisms</strong> are connections between the objects and are displayed with arrows in the diagrams. </li>
+<li><strong>Morphisms</strong> can be combined transitively to form new morphisms.</li>
 <li>
-<p>Each object is associated with an <strong>Identity Morphism</strong> (a circular arrow to itself) which does not change other morphism when combined with them.</p>
+<p>Each object is associated with an <strong>Identity Morphism</strong> (a circular arrow to itself) which does not change other morphisms when combined with them.</p>
 <p><div align=center>
 <img src="../../img/intro_to_category/arrows.png" width="400px" hight="200px">
 </div></p>
 </li>
 </ul>
 <h3 id="functors"><strong>Functors</strong></h3>
-<p>The categories themselves can by <em>"higher level arrows"</em> which are called <span style="color: blue;"><strong>Functors</strong></span>. Latter, are mappings between categories that preserve the inner relationships (morphisms and their composition) between the objects.</p>
+<p>The categories themselves can be <em>"higher level arrows"</em> which are called <span style="color: blue;"><strong>Functors</strong></span>. The latter are mappings between categories that preserve the inner relationships (morphisms and their composition) between the objects.</p>
 <p>As such, <strong>Functors</strong> <code>establish analogies between two categories</code>, and they can be used to translate the concepts from one category to another.</p>
 <h3 id="natural-transformations"><strong>Natural Transformations</strong></h3>
-<p>The <span style="color: red;"><strong>Natural Transformation</strong></span> is a concept which allows to define <em><code>connections between Functors</code></em> in a sense
-analogous to what are Morphisms for objects. A such they establish dualities between Functors and objects in the categories. </p>
-<p>Since the Functors are defined by the way they transform each objects, to define connections between them we need to define  a <em><code>natural</code></em> way to transform images of each object by the two Functors.</p>
-<p>Thus, a <strong>Natural Transformation</strong> is achieved via a family of morphism associated with each objects in the categories. Each object in the source category corresponds to a morphism in the target category, which maps the image of the object under the first functor to its image under the second functor. These morphisms enable us to relate how each functor transforms objects and morphisms. A natural transformation is established when there is consistency between the transformations induced by these morphisms and the transformations applied by the functors to objects and morphisms.</p>
+<p>The <span style="color: red;"><strong>Natural Transformation</strong></span> is a concept which allows one to define <em><code>connections between Functors</code></em> in a sense
+analogous to what are Morphisms for objects. As such, they establish dualities between Functors and objects in the categories. </p>
+<p>Since the Functors are defined by the way they transform each object, to define connections between them we need to define  a <em><code>natural</code></em> way to transform images of each object by the two Functors.</p>
+<p>Thus, a <strong>Natural Transformation</strong> is achieved via a family of morphisms associated with each object in the categories. Each object in the source category corresponds to a morphism in the target category, which maps the image of the object under the first functor to its image under the second functor. These morphisms enable us to relate how each functor transforms objects and morphisms. A natural transformation is established when there is consistency between the transformations induced by these morphisms and the transformations applied by the functors to objects and morphisms.</p>
 <h3 id="category-theory-and-programming"><strong>Category Theory and Programming</strong></h3>
-<p>The parallel between the category theory and the programming is that оne can think of the objects as the data types and the arrows as the functions that connect the data types. The parallelism allows to use the category theory to reason about the programs and to develop programming concepts which can stay consistent exploiting the concepts of the category theory.</p>
-<p>An analogy can be made between the category theory and the programming languages. The objects in the category theory are like the types in the programming languages, and the morphisms are like the functions that operate on the types. The category theory provides a way to reason about the types and functions in the programming languages.</p>
+<p>The parallel between category theory and programming is that one can think of the objects as the data types and the arrows as the functions that connect the data types. The parallelism allows one to use category theory to reason about programs and to develop programming concepts which can stay consistent exploiting the concepts of category theory.</p>
+<p>An analogy can be made between category theory and programming languages. The objects in category theory are like the types in the programming languages, and the morphisms are like the functions that operate on the types. Category theory provides a way to reason about the types and functions in the programming languages.</p>
 <p>Let's consider the example of morphism between objects of 'Int' and 'String' types. The morphism is a function that converts an integer to a string. The function is defined in the programming language as follows:</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Python</label><label for="__tabbed_1_2">Scala</label><label for="__tabbed_1_3">Haskell</label></div>
 <div class="tabbed-content">
