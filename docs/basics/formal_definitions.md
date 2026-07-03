@@ -15,7 +15,7 @@ We denote \\(mor_{{\mathcal{C}}}(A, B)\\) the class of all morphisms between the
 
 - There is a binary operation \\(\circ\\) on the class of Morphisms called **morphism compositions**:
   \\[ \circ \colon mor_{{\mathcal{C}}}(A, B) \times mor_{{\mathcal{C}}}(B, C) \to mor_{{\mathcal{C}}}(A, C).\\] 
-  Which allows to combine any two morphisms \\(f\in mor_{{\mathcal{C}}}(A, B)\\) and \\(g\in mor_{{\mathcal{C}}}(B, C)\\) to  produce a new morphism \\(g\circ f\in mor_{{\mathcal{C}}}(A, C)\\).
+  which allows one to combine any two morphisms \\(f\in mor_{{\mathcal{C}}}(A, B)\\) and \\(g\in mor_{{\mathcal{C}}}(B, C)\\) to  produce a new morphism \\(g\circ f\in mor_{{\mathcal{C}}}(A, C)\\).
   
     <div align=center>
     <img src="../../img/intro_to_category/commutative_diagram.png" width="300px" hight="100px">
@@ -23,7 +23,7 @@ We denote \\(mor_{{\mathcal{C}}}(A, B)\\) the class of all morphisms between the
 
 So that the following properties hold:
 
-- **Associativity:** If there are are different ways of composing morphisms, the result should be the same.
+- **Associativity:** If there are different ways of composing morphisms, the result should be the same.
 
     > For any \\(f\in mor_{{{\mathcal{C}}}}(A, B)\\), \\(g\in mor_{{{\mathcal{C}}}}(B, C)\\) and \\(h\in mor_{{{\mathcal{C}}}}(C, D)\\)
     \\[h\circ(g\circ f) = (h\circ g)\circ f.\\]
@@ -45,7 +45,7 @@ So that the following properties hold:
 
 ## **Functors**
 
-The categories themselves can by "higher level arrows" which are called <span style="color: red;">**Functors**</span>. Latter, are mappings between categories that preserve the inner relationships (morphisms and their composition) between the objects.
+The categories themselves can be "higher level arrows" which are called <span style="color: red;">**Functors**</span>. The latter are mappings between categories that preserve the inner relationships (morphisms and their composition) between the objects.
 
 <div style="text-align: center;">
     <img src="../../img/intro_to_category/functor_diag.png" alt="Commutative Diagram"  width="300" height="200">
@@ -70,7 +70,7 @@ such that
 
 - \\(\eta_A\\) is a morphism from \\(F(A)\\) to \\(G(A)\\), for each \\(obj(\mathcal{C}_1)\\).
   
-- The above morphism relate the way the two Functors transform objects such that for every morphism \\(f\colon A \mapsto B\\), \\(A, B\in obj(\mathcal{C}_1)\\), we have
+- The above morphisms relate the way the two Functors transform objects such that for every morphism \\(f\colon A \mapsto B\\), \\(A, B\in obj(\mathcal{C}_1)\\), we have
 \\[\eta_B\circ F(f) = G(f)\circ \eta_A.\\]
 
 This is illustrated in the following diagram with the commutative diagram that should hold for each morphism \\(\eta_{X}, \eta_{Y}\\) associated to the objects \\(X, Y\\) in the categories.
